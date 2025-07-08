@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoFix</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <h1>AutoFix - Reparación de vehículos a domicilio</h1>
+    <section class="servicios">
+        <h2>Servicios y precios</h2>
+        <article class="carrusel">
+            <div class="servicio-card">
+                <img src="./assets/img/aceite-de-coche.png" alt="Cambio de aceite" class="servicio-img">
+                <h3 class="servicio">Cambio de aceite</h3>
+                <h4 class="precio">$45.000</h4>
+            </div>
+            <div class="servicio-card">
+                <img src="./assets/img/freno-de-disco-2.png" alt="Revisión de frenos" class="servicio-img">
+                <h3 class="servicio">Revisión de frenos</h3>
+                <h4 class="precio">$25.000</h4>
+            </div>
+            <div class="servicio-card">
+                <img src="./assets/img/diagnostico-del-automovil.png" alt="Escaneo mecánico y eléctrico" class="servicio-img">
+                <h3 class="servicio">Escaneo mecánico y eléctrico</h3>
+                <h4 class="precio">$35.000</h4>
+            </div>
+        </article>
+    </section>
+
+    <section class="formulario">
+        <h2>Solicitar reparación</h2>
+        <form action="#" method="post">
+            <div>
+                <label for="cliente">Nombre del cliente</label>
+                <input type="text" name="cliente">
+            </div>
+            <div>
+                <label for="servicio-lista">Tipo de reparación</label>
+                <select name="lista" id="servicio">
+                    <option value="servicio1">Cambio de aceite</option>
+                    <option value="servicio2">Revisión de frenos</option>
+                    <option value="servicio3">Escaneo</option>
+                </select>
+            </div>
+            <div>
+                <label for="descripcion">Descripción</label>
+                <textarea name="descripcion" id=""></textarea>
+            </div>
+            <div>
+                <label for="cita">Agendar cita</label>
+                <input type="date" name="cita">
+            </div>
+        </form>
+    </section>
+
+    <section class="formulario">
+        <h2>Información de pago (simulado)</h2>
+        <form action="#" method="post">
+            <div>
+                <label for="numero-tarjeta">Número de tarjeta</label>
+                <input type="text" name="numero-tarjeta" id="">
+            </div>
+            <div>
+                <label for="titular">Nombre del titular</label>
+                <input type="text" name="titular">
+            </div>
+            <div>
+                <label for="cvv">CVV</label>
+                <input type="text" name="cvv" id="">
+            </div>
+            <button>Confirmar solicitud</button>
+        </form>
+    </section>
+</body>
+</html>

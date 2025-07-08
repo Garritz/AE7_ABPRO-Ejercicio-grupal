@@ -1,0 +1,35 @@
+body {
+    max-width: 1024px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.servicios {
+    display: flex;
+    flex-direction: column;
+}
+
+.carrusel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.servicio-card {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+.servicio-img {
+    max-width: inherit;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario div {
+    display: flex;
+    flex-direction: column;
+}
