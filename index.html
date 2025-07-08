@@ -4,56 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AutoFix</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
     <h1>AutoFix - Reparación de vehículos a domicilio</h1>
     <section class="servicios">
-        <h2>Servicios y precios</h2>
-        <article class="carrusel">
-            <div class="servicio-card">
-                <img src="./assets/img/aceite-de-coche.png" alt="Cambio de aceite" class="servicio-img">
-                <h3 class="servicio">Cambio de aceite</h3>
-                <h4 class="precio">$45.000</h4>
+        <h2>Servicios y precios</h2>    
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card rounded-0">
+                    <img class="card-top" src="./assets/img/pexels-daniel-andraski-197681005-13065697.jpg" alt="Cambio de aceite">
+                    <div class="card-body">
+                        <h5 class="card-title">Cambio de aceite</h5>
+                        <p class="card-text">$75.000</p>
+                    </div>
+                </div>
             </div>
-            <div class="servicio-card">
-                <img src="./assets/img/freno-de-disco-2.png" alt="Revisión de frenos" class="servicio-img">
-                <h3 class="servicio">Revisión de frenos</h3>
-                <h4 class="precio">$25.000</h4>
+            <div class="col-sm-4">
+                <div class="card rounded-0">
+                    <img class="card-top" src="./assets/img/pexels-gustavo-fring-6870299.jpg" alt="Revisión de frenos">
+                    <div class="card-body">
+                        <h5 class="card-title">Revisión de frenos</h5>
+                        <p class="card-text">$15.000</p>
+                    </div>
+                </div>
             </div>
-            <div class="servicio-card">
-                <img src="./assets/img/diagnostico-del-automovil.png" alt="Escaneo mecánico y eléctrico" class="servicio-img">
-                <h3 class="servicio">Escaneo mecánico y eléctrico</h3>
-                <h4 class="precio">$35.000</h4>
+            <div class="col-sm-4">
+                <div class="card rounded-0">
+                    <img class="card-top" src="./assets/img/pexels-lumierestudiomx-4116193.jpg" alt="Escaneo mecánico y eléctrico">
+                    <div class="card-body">
+                        <h5 class="card-title">Escaneo mecánico y eléctrico</h5>
+                        <p class="card-text">$35.000</p>
+                    </div>
+                </div>
             </div>
-        </article>
+        </div>
     </section>
 
     <section class="formulario">
         <h2>Solicitar reparación</h2>
-        <form action="#" method="post">
-            <div>
-                <label for="cliente">Nombre del cliente</label>
-                <input type="text" name="cliente">
-            </div>
-            <div>
-                <label for="servicio-lista">Tipo de reparación</label>
-                <select name="lista" id="servicio">
-                    <option value="servicio1">Cambio de aceite</option>
-                    <option value="servicio2">Revisión de frenos</option>
-                    <option value="servicio3">Escaneo</option>
-                </select>
-            </div>
-            <div>
-                <label for="descripcion">Descripción</label>
-                <textarea name="descripcion" id=""></textarea>
-            </div>
-            <div>
-                <label for="cita">Agendar cita</label>
-                <input type="date" name="cita">
-            </div>
-        </form>
+            <form action="#" method="post">
+                <div>
+                    <label for="cliente">Nombre del cliente</label>
+                    <input type="text" name="cliente">
+                </div>
+                <div>
+                    <label for="servicio-lista">Tipo de reparación</label>
+                    <select name="lista" id="servicio">
+                        <option value="servicio1">Cambio de aceite</option>
+                        <option value="servicio2">Revisión de frenos</option>
+                        <option value="servicio3">Escaneo</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="descripcion">Descripción</label>
+                    <textarea name="descripcion" id=""></textarea>
+                </div>
+                <div>
+                    <label for="cita">Agendar cita</label>
+                    <input type="date" name="cita">
+                </div>
+            </form>
     </section>
 
     <section class="formulario">
@@ -71,7 +84,7 @@
                 <label for="cvv">CVV</label>
                 <input type="text" name="cvv" id="">
             </div>
-            <button>Confirmar solicitud</button>
+            <button type="button" class="btn btn-primary">Confirmar solicitud</button>
         </form>
     </section>
 </body>

@@ -1,6 +1,7 @@
 # AE7_ABPRO-Ejercicio-grupal
 
 Atribuciones
-   <a href="https://www.flaticon.es/iconos-gratis/aceite-de-coche" title="aceite de coche iconos">Aceite de coche iconos creados por imaginationlol - Flaticon</a>
-   <a href="https://www.flaticon.es/iconos-gratis/freno" title="freno iconos">Freno iconos creados por Freepik - Flaticon</a>
-    <a href="https://www.flaticon.es/iconos-gratis/buen-auto-diagnostico" title="buen auto diagnostico iconos">Buen auto diagnostico iconos creados por Graphics Hill - Flaticon</a>
+    Photo by Daniel Andraski: https://www.pexels.com/photo/close-up-of-pouring-oil-to-engine-13065697/
+    Photo by Gustavo Fring: https://www.pexels.com/photo/a-close-up-shot-of-a-vehicle-disc-brake-6870299/
+    Photo by Jose Ricardo Barraza Morachis: https://www.pexels.com/photo/person-holding-blue-diagnostic-tool-4116193/
+

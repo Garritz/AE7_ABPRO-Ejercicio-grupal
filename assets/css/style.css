@@ -1,35 +1,23 @@
 body {
-    max-width: 1024px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.servicios {
+    margin: 0 auto;
+    width: 80vw;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.carrusel {
+.card-top {
+    max-width: fit-content;
+    max-height: auto;
+}
+
+.card-body {
+    min-height: max-content;
+}
+
+.servicios .col-sm-4 {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    max-width: 80vw;
 }
 
-.servicio-card {
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-}
-
-.servicio-img {
-    max-width: inherit;
-}
-
-.formulario {
-    display: flex;
-    flex-direction: column;
-}
-
-.formulario div {
-    display: flex;
-    flex-direction: column;
-}
