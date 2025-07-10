@@ -5,50 +5,94 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: Arial, sans-serif;
 }
 
-h1 {
+h1, h2 {
     margin-top: 1rem;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
-.card-top {
+.servicios .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.servicios .row div {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.service-img {
     width: 100%;
-    height: auto;
+    height: 150px;
     object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
 }
 
-.card-body {
-    min-height: max-content;
-}
-
-.row {
-    width: 100%;
-}
-
-.servicios {
-    margin-bottom: 1rem;
-}
-
-.formulario {
+.formulario, .pago {
     width: 100%;
     margin-bottom: 1rem;
 }
 
-.formulario form {
+.formulario form, .pago form {
     width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
-.formulario form div {
+.formulario form div, .pago form div {
     margin-bottom: 0.5rem;
     width: 100%;
 }
 
-.formulario form label {
+.formulario form label, .pago form label {
     display: block;
+    margin-bottom: 0.2rem;
+    font-weight: bold;
 }
 
 .form-control {
-    width: 100% !important;
+    width: 100%;
     box-sizing: border-box;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+    .servicios .row {
+        flex-direction: column;
+    }
+
+    .servicios .row div {
+        width: 100%;
+    }
 }
