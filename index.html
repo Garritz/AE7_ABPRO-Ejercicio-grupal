@@ -45,47 +45,55 @@
 
     <section class="formulario">
         <h2>Solicitar reparación</h2>
-            <form action="#" method="post">
-                <div>
-                    <label for="cliente">Nombre del cliente</label>
-                    <input type="text" name="cliente">
-                </div>
-                <div>
-                    <label for="servicio-lista">Tipo de reparación</label>
-                    <select name="lista" id="servicio">
-                        <option value="servicio1">Cambio de aceite</option>
-                        <option value="servicio2">Revisión de frenos</option>
-                        <option value="servicio3">Escaneo</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="descripcion">Descripción</label>
-                    <textarea name="descripcion" id=""></textarea>
-                </div>
-                <div>
-                    <label for="cita">Agendar cita</label>
-                    <input type="date" name="cita">
-                </div>
-            </form>
+        <div class="row">
+            <div class="col-12">
+                <form action="#" method="post">
+                    <div>
+                        <label for="cliente">Nombre del cliente</label>
+                        <input type="text" name="cliente" class="form-control">
+                    </div>
+                    <div>
+                        <label for="servicio-lista">Tipo de reparación</label>
+                        <select name="lista" id="servicio" class="form-control">
+                            <option value="servicio1">Cambio de aceite</option>
+                            <option value="servicio2">Revisión de frenos</option>
+                            <option value="servicio3">Escaneo</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="descripcion">Descripción del vehículo</label>
+                        <textarea name="descripcion" class="form-control"></textarea>
+                    </div>
+                    <div>
+                        <label for="cita">Agendar cita</label>
+                        <input type="date" name="cita" class="form-control">
+                    </div>
+                </form>
+            </div>
+        </div>
     </section>
 
     <section class="formulario">
         <h2>Información de pago (simulado)</h2>
-        <form action="#" method="post">
-            <div>
-                <label for="numero-tarjeta">Número de tarjeta</label>
-                <input type="text" name="numero-tarjeta" id="">
+        <div class="row">
+            <div class="col-12">
+                <form action="#" method="post">
+                    <div>
+                        <label for="numero-tarjeta">Número de tarjeta</label>
+                        <input type="text" name="numero-tarjeta" class="form-control">
+                    </div>
+                    <div>
+                        <label for="titular">Nombre del titular</label>
+                        <input type="text" name="titular" class="form-control">
+                    </div>
+                    <div>
+                        <label for="cvv">CVV</label>
+                        <input type="text" name="cvv" class="form-control">
+                    </div>
+                    <button type="button" class="btn btn-primary mt-3">Confirmar solicitud</button>
+                </form>
             </div>
-            <div>
-                <label for="titular">Nombre del titular</label>
-                <input type="text" name="titular">
-            </div>
-            <div>
-                <label for="cvv">CVV</label>
-                <input type="text" name="cvv" id="">
-            </div>
-            <button type="button" class="btn btn-primary">Confirmar solicitud</button>
-        </form>
+        </div>
     </section>
 </body>
 </html>

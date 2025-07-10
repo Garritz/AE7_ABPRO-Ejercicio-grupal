@@ -7,17 +7,48 @@ body {
     align-items: center;
 }
 
+h1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 .card-top {
-    max-width: fit-content;
-    max-height: auto;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .card-body {
     min-height: max-content;
 }
 
-.servicios .col-sm-4 {
-    display: flex;
-    max-width: 80vw;
+.row {
+    width: 100%;
 }
 
+.servicios {
+    margin-bottom: 1rem;
+}
+
+.formulario {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.formulario form {
+    width: 100%;
+}
+
+.formulario form div {
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.formulario form label {
+    display: block;
+}
+
+.form-control {
+    width: 100% !important;
+    box-sizing: border-box;
+}
